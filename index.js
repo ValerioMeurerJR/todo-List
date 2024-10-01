@@ -38,19 +38,21 @@ function render() {
         span.textContent = tarefa.text;
 
         const concluir = document.createElement("span");
-        concluir.textContent = "task_list"
+        concluir.textContent = "check_box"
         concluir.classList.add("check")
         concluir.classList.add("material-symbols-outlined")
         concluir.setAttribute("onclick", `tootle(${tarefa.id});`)
         
 
         const Editar = document.createElement("Button");
-        Editar.textContent = "Editar"
+        Editar.textContent = "edit_note"
+        Editar.classList.add("material-symbols-outlined")
         Editar.classList.add("edit")
         Editar.setAttribute("onclick", `Edit(${tarefa.id});`)
 
         const delet = document.createElement("Button");
-        delet.textContent = "Deletar"
+        delet.textContent = "delete"
+        delet.classList.add("material-symbols-outlined")
         delet.classList.add("delete");
         delet.setAttribute("onclick", `Delete(${tarefa.id});`)
 
