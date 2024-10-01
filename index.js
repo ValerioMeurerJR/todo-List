@@ -37,10 +37,12 @@ function render() {
         const span = document.createElement("span");
         span.textContent = tarefa.text;
 
-        const concluir = document.createElement("Button");
-        concluir.textContent = tarefa.completed ? "Desmarcar" : "Concluir"
+        const concluir = document.createElement("span");
+        concluir.textContent = "task_list"
         concluir.classList.add("check")
+        concluir.classList.add("material-symbols-outlined")
         concluir.setAttribute("onclick", `tootle(${tarefa.id});`)
+        
 
         const Editar = document.createElement("Button");
         Editar.textContent = "Editar"
